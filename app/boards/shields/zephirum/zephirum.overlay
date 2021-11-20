@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/trackball_pim447.h>
 
 / {
 	chosen {
@@ -67,5 +68,11 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)   RC(5,5) RC(5,4) RC(5,3) RC(5,2
 		com-invdir;
 		com-sequential;
 		prechargep = <0x22>;
+	};
+
+	trackball_pim447@a {
+		compatible = "pimoroni,trackball_pim447";
+		reg = <0xa>;
+		label = "TRACKBALL_PIM447";
 	};
 };
